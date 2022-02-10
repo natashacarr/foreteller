@@ -18,6 +18,7 @@
   width: 75vw;
   height: 55vh;
   padding: 30px;
+  text-align: center;
   background-color: rgba(229, 220, 233, 0.5);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -27,14 +28,28 @@
 #reveal-text {
   font-family: Sacramento, cursive;
   font-size: 8rem;
-  text-align: center;
   font-style: italic;
   color: #332a2b;
   margin: 0px;
 }
 
+.tilde {
+  display: inline-block;
+  font-size: 8rem;
+  margin: 0px;
+}
+
 #reveal-button {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background: none;
+  padding: 0px;
+  margin: 2rem;
+  border: none;
+}
+
+#crystal-ball {
+  margin: 0px;
+  /* border: 1px solid black; */
 }
 
 #fortune {
