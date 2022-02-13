@@ -29,7 +29,7 @@ const fortunesArray = [
   "Share your joys and sorrows with your family.",
   "Strong reasons make strong actions.",
   "Technology is the art of arranging the world, so we do not notice it.",
-  "The best prediction of future is the past.",
+  "The best prediction of the future is the past.",
   "The only people who never fail are those who never try.",
   "The saints are the sinners who keep on trying.",
   "There is no such thing as an ordinary cat.",
