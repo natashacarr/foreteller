@@ -156,6 +156,10 @@
 /* mobile 375px */
 
 @media screen and (max-width: 376px) {
+  #container {
+    height: 85vh;
+  }
+
   #reveal-text {
     margin: 15px 0px;
   }
