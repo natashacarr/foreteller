@@ -15,28 +15,39 @@
 #container {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
-  width: 75vw;
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  justify-items: center;
+  align-items: center;
+  width: 85vw;
   height: 55vh;
   background-color: rgba(229, 220, 233, 0.7);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 20px;
   text-align: center;
 }
 
 /* fortune styles */
 
 #reveal-text {
+  grid-row: 1/1;
   font-family: Sacramento, cursive;
-  font-size: 8rem;
+  font-size: 10rem;
   font-style: italic;
   color: #332a2b;
+  margin: 0px;
+}
+
+#button-container {
+  grid-row: 2/2;
+  height: 100%;
   margin: 0px;
 }
 
 .tilde {
   display: inline-block;
   font-family: Forum, cursive;
-  font-size: 7rem;
+  font-size: 8rem;
   color: #332a2b;
   margin: 0px;
 }
@@ -63,50 +74,116 @@
 }
 
 #fortune {
+  grid-row: 3/3;
   font-family: Forum, cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #332a2b;
   margin: 0px;
 }
 
-/* /////////////// */
-/* smaller screens */
-/* /////////////// */
+/* /////////// */
+/* breakpoints */
+/* /////////// */
 
-/* tablet landscape 1024px */
+/* 1770px */
 
-@media screen and (max-width: 1024px) {
-  #container {
-    height: 55vh;
-    padding: 20px;
+@media screen and (max-width: 1770px) {
+  #reveal-text {
+    font-size: 9rem;
   }
 
+  #fortune {
+    font-size: 2.7rem;
+  }
+}
+
+/* 1536px */
+
+@media screen and (max-width: 1536px) {
+  #container {
+    height: 65vh;
+  }
+
+  #reveal-text {
+    font-size: 8rem;
+  }
+}
+
+/* 1183px */
+
+@media screen and (max-width: 1183px) {
+  #reveal-text {
+    font-size: 9rem;
+  }
+
+  #fortune {
+    font-size: 2.5rem;
+  }
+}
+
+/* 1064px */
+
+@media screen and (max-width: 1064px) {
+  #reveal-text {
+    font-size: 8rem;
+  }
+}
+
+/* 944px */
+
+@media screen and (max-width: 944px) {
+  #container {
+    height: 45vh;
+  }
+
+  #reveal-text {
+    font-size: 7rem;
+  }
+
+  #reveal-button {
+    height: 140px;
+    width: 120px;
+  }
+
+  #fortune {
+    font-size: 2.5rem;
+  }
+}
+
+/* 827px */
+
+@media screen and (max-width: 827px) {
   #reveal-text {
     font-size: 6.5rem;
   }
 
   .tilde {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 
   #reveal-button {
-    height: 110px;
-    width: 90px;
-    margin: 1rem;
+    height: 130px;
+    width: 110px;
   }
 
   #fortune {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 
-/* tablet portrait 768px */
+/* 768px */
 
 @media screen and (max-width: 768px) {
+  #reveal-text {
+    font-size: 6rem;
+  }
+}
+
+/* 709px */
+
+@media screen and (max-width: 709px) {
   #container {
-    width: 85vw;
-    height: 50vh;
-    padding: 20px;
+    height: 40vh;
   }
 
   #reveal-text {
@@ -114,13 +191,96 @@
   }
 
   .tilde {
+    font-size: 6rem;
+  }
+
+  #reveal-button {
+    height: 120px;
+    width: 100px;
+  }
+
+  #fortune {
+    font-size: 2.1rem;
+  }
+}
+
+/* 650px */
+
+@media screen and (max-width: 650px) {
+  #container {
+    height: 70vh;
+    padding: 20px;
+  }
+
+  #reveal-text {
+    font-size: 7.5rem;
+    line-height: 5.5rem;
+    margin-top: 30px;
+  }
+
+  .tilde {
+    font-size: 7rem;
+  }
+
+  #reveal-button {
+    height: 130px;
+    width: 110px;
+  }
+
+  #fortune {
+    font-size: 2.5rem;
+  }
+}
+
+/* 556px */
+
+@media screen and (max-width: 556px) {
+  #reveal-text {
+    font-size: 6.5rem;
+    margin-top: 15px;
+  }
+
+  #reveal-button {
+    height: 120px;
+    width: 100px;
+  }
+
+  #fortune {
+    font-size: 2.3rem;
+  }
+}
+
+/* 480px */
+
+@media screen and (max-width: 480px) {
+  #reveal-text {
+    font-size: 6rem;
+  }
+
+  #fortune {
+    font-size: 2.1rem;
+  }
+}
+
+/* 376px */
+
+@media screen and (max-width: 376px) {
+  #container {
+    height: 70vh;
+  }
+
+  #reveal-text {
     font-size: 5rem;
+    line-height: 3.6rem;
+  }
+
+  .tilde {
+    font-size: 5.5rem;
   }
 
   #reveal-button {
     height: 100px;
     width: 80px;
-    margin: 1.5rem 0.7rem;
   }
 
   #fortune {
@@ -128,43 +288,7 @@
   }
 }
 
-/* mobile 480px */
+/* 360px */
 
-@media screen and (max-width: 480px) {
-  #container {
-    width: 80vw;
-    height: 55vh;
-  }
-
-  #reveal-text {
-    font-size: 5rem;
-    line-height: 3.7rem;
-    margin: 0px;
-  }
-
-  #reveal-button {
-    height: 90px;
-    width: 70px;
-    margin: 1.3rem 0.7rem;
-  }
-
-  #fortune {
-    font-size: 1.5rem;
-  }
-}
-
-/* mobile 375px */
-
-@media screen and (max-width: 376px) {
-  #container {
-    height: 85vh;
-  }
-
-  #reveal-text {
-    margin: 15px 0px;
-  }
-
-  #fortune {
-    font-size: 1.7rem;
-  }
+@media screen and (max-width: 360px) {
 }
