@@ -275,25 +275,26 @@
 
 @media screen and (max-width: 376px) {
   #container {
-    height: 70vh;
+    height: 75vh;
   }
 
   #reveal-text {
     font-size: 5rem;
-    line-height: 3.6rem;
+    line-height: 3.7rem;
   }
 
   .tilde {
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
 
   #reveal-button {
-    height: 100px;
-    width: 80px;
+    height: 90px;
+    width: 70px;
+    margin-top: 40px;
   }
 
   #fortune {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 
