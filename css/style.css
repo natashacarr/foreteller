@@ -235,18 +235,27 @@
 /* 556px */
 
 @media screen and (max-width: 556px) {
+  #container {
+    padding: 10px;
+  }
+
   #reveal-text {
-    font-size: 6.5rem;
-    margin-top: 15px;
+    font-size: 4.5rem;
+    margin: 0px;
+  }
+
+  .tilde {
+    font-size: 5rem;
   }
 
   #reveal-button {
-    height: 120px;
-    width: 100px;
+    height: 90px;
+    width: 70px;
+    margin: 10px;
   }
 
   #fortune {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
 }
 
