@@ -16,7 +16,7 @@ This app was created as a small side project just for a bit of fun.
 ## Technologies Used
 - HTML5
 - CSS3
-- and a tiny drop of JavaScript
+- JavaScript
 
 
 ## Project Status
